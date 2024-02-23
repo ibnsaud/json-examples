@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "foo.h"
 
 int main(void)
 {
-    printf("Hello Wordl!");
+    printf("%s", foo());
     
     return 0;
 }

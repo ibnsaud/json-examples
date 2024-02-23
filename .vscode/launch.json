@@ -1,0 +1,64 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // task user-friendly name, can be modified
+            "name": "C/C++: debug single files program",
+            // type of programming language
+            "type": "cppdbg",
+            "request": "launch",
+            // location of file (with extention) to debug
+            "program": "${workspaceFolder}\\examples\\singleFile\\${fileBasenameNoExtension}.exe",
+            // command-line arguments
+            "args": [],
+            // do you need breakpoint at main? (optional)
+            "stopAtEntry": false,
+            // where to run "miDebuggerPath"?
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            // what programm to run (gdb path)
+            "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+            ],
+            // prelaunch task to do, set according to your build task name
+            "preLaunchTask": "C/C++ build single .c file"
+        },
+
+        {
+            // task user-friendly name, can be modified
+            "name": "C/C++: debug multiple files program",
+            // type of programming language
+            "type": "cppdbg",
+            "request": "launch",
+            // location of file (with extention) to debug
+            "program": "${workspaceFolder}\\examples\\multipleFile\\${fileBasenameNoExtension}.exe",
+            // command-line arguments
+            "args": [],
+            // do you need breakpoint at main? (optional)
+            "stopAtEntry": false,
+            // where to run "miDebuggerPath"?
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            // what programm to run (gdb path)
+            "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+            ],
+            // prelaunch task to do, set according to your build task name
+            "preLaunchTask": "C/C++ build multiple .c files"
+        },
+    ]
+}
